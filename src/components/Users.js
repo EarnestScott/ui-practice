@@ -47,13 +47,11 @@ export const Users = () => {
     }
 
     return (
-        <>
-            {(<div>
+        <div>
+            <h1 style={{ textAlign: 'center', fontSize: 50 }}>Users</h1>
+            {formatTable(userData)}
 
-                {formatTable(userData)}
-
-            </div>)}
-        </>
+        </div>
 
     )
 };
