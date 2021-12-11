@@ -10,6 +10,7 @@ import {
 } from 'react-router-dom';
 import { FacebookHome } from './components/FacebookHome';
 import { CoinbaseHome } from './components/CoinbaseHome';
+import { Users } from './components/Users';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -20,6 +21,7 @@ ReactDOM.render(
         <Route path="/" element={<App />} />
         <Route path="/facebook" element={<FacebookHome />} />
         <Route path="/coinbase" element={<CoinbaseHome />} />
+        <Route path="/users" element={<Users />} />
       </Routes>
       {/* < App /> */}
     </BrowserRouter>
