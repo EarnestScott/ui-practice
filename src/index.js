@@ -3,10 +3,26 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from 'react-router-dom';
+import { FacebookHome } from './components/FacebookHome';
+import { CoinbaseHome } from './components/CoinbaseHome';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/facebook" element={<FacebookHome />} />
+        <Route path="/coinbase" element={<CoinbaseHome />} />
+      </Routes>
+      {/* < App /> */}
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
